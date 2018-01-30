@@ -16,7 +16,7 @@ namespace CS_HW1_ScoreCalc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new CS_HW1_ScoreCalcForm());
         }
     }
 }
