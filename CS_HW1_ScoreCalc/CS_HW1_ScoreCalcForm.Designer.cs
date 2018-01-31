@@ -35,7 +35,7 @@
             this.ScoreTotalTextBox = new System.Windows.Forms.TextBox();
             this.ScoreCountTextBox = new System.Windows.Forms.TextBox();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.btnClearScores = new System.Windows.Forms.Button();
+            this.ClearScoresButton = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
             this.AverageLabel = new System.Windows.Forms.Label();
             this.ScoreAverageTextBox = new System.Windows.Forms.TextBox();
@@ -105,15 +105,15 @@
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // btnClearScores
+            // ClearScoresButton
             // 
-            this.btnClearScores.Location = new System.Drawing.Point(42, 113);
-            this.btnClearScores.Name = "btnClearScores";
-            this.btnClearScores.Size = new System.Drawing.Size(92, 23);
-            this.btnClearScores.TabIndex = 3;
-            this.btnClearScores.Text = "Clear Scores";
-            this.btnClearScores.UseVisualStyleBackColor = true;
-            this.btnClearScores.Click += new System.EventHandler(this.btnClearScores_Click);
+            this.ClearScoresButton.Location = new System.Drawing.Point(42, 113);
+            this.ClearScoresButton.Name = "ClearScoresButton";
+            this.ClearScoresButton.Size = new System.Drawing.Size(92, 23);
+            this.ClearScoresButton.TabIndex = 3;
+            this.ClearScoresButton.Text = "Clear Scores";
+            this.ClearScoresButton.UseVisualStyleBackColor = true;
+            this.ClearScoresButton.Click += new System.EventHandler(this.btnClearScores_Click);
             // 
             // btnExit
             // 
@@ -155,7 +155,7 @@
             this.Controls.Add(this.ScoreAverageTextBox);
             this.Controls.Add(this.AverageLabel);
             this.Controls.Add(this.btnExit);
-            this.Controls.Add(this.btnClearScores);
+            this.Controls.Add(this.ClearScoresButton);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.ScoreCountTextBox);
             this.Controls.Add(this.ScoreTotalTextBox);
@@ -165,6 +165,7 @@
             this.Controls.Add(this.ScoreLabel);
             this.Name = "CS_HW1_ScoreCalcForm";
             this.Text = "Score Calculator";
+            this.Load += new System.EventHandler(this.CS_HW1_ScoreCalcForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -179,7 +180,7 @@
         private System.Windows.Forms.TextBox ScoreTotalTextBox;
         private System.Windows.Forms.TextBox ScoreCountTextBox;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Button btnClearScores;
+        private System.Windows.Forms.Button ClearScoresButton;
         private System.Windows.Forms.Button btnExit;
         private System.Windows.Forms.Label AverageLabel;
         private System.Windows.Forms.TextBox ScoreAverageTextBox;
